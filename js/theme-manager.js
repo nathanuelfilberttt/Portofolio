@@ -1,7 +1,3 @@
-/**
- * ThemeManager – toggle terang/gelap dengan localStorage
- * Dependency: #themeToggle
- */
 export class ThemeManager {
     constructor(toggleId) {
         this.toggle = document.getElementById(toggleId);

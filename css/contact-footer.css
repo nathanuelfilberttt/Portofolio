@@ -23,13 +23,22 @@
     gap: var(--space-xl);
     margin-bottom: var(--space-2xl);
 }
+
 .contact-link {
     font-size: 1.1rem;
     border-bottom: 1px solid var(--border);
     padding-bottom: 2px;
 }
-.contact-link:hover { color: var(--text); border-color: var(--text); }
-.contact-location { font-size: 0.85rem; color: var(--text-subtle); line-height: 1.6; }
+
+.contact-link:hover { 
+    color: var(--text); 
+    border-color: var(--text); 
+}
+
+.contact-location { font-size: 0.85rem; 
+    color: var(--text-subtle); 
+    line-height: 1.6; 
+}
 
 .site-footer {
     padding: var(--space-3xl) var(--space-3xl) var(--space-xl);
@@ -44,11 +53,34 @@
     max-width: var(--content-max);
     margin-inline: auto;
 }
-.footer-logo { font-weight: 700; font-size: 1.2rem; color: var(--text); margin-bottom: 0.5rem; }
-.footer-tagline { color: var(--text-muted); }
-.footer-heading { text-transform: uppercase; color: var(--text-subtle); font-size: 0.7rem; font-weight: 600; margin-bottom: 1rem; }
-.footer-link { display: block; color: var(--text-muted); margin-bottom: 0.5rem; transition: 0.2s; }
-.footer-link:hover { color: var(--text); }
+.footer-logo { font-weight: 700; 
+    font-size: 1.2rem; 
+    color: var(--text); 
+    margin-bottom: 0.5rem; 
+}
+
+.footer-tagline { 
+    color: var(--text-muted); 
+}
+
+.footer-heading { 
+    text-transform: uppercase; 
+    color: var(--text-subtle); 
+    font-size: 0.7rem; 
+    font-weight: 600; margin-bottom: 1rem; 
+}
+
+.footer-link { 
+    display: block; 
+    color: var(--text-muted);
+    margin-bottom: 0.5rem; 
+    transition: 0.2s; 
+}
+
+.footer-link:hover { 
+    color: var(--text); 
+}
+
 .footer-bottom {
     border-top: 1px solid var(--border);
     padding-top: var(--space-lg);

@@ -1,4 +1,3 @@
-/* Section shared – .section-header, .section-title (projects, about, services, approach, faq) */
 .section-header {
     display: flex;
     justify-content: space-between;

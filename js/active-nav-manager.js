@@ -1,7 +1,3 @@
-/**
- * ActiveNavManager – memberi highlight pada nav link sesuai section yang terlihat
- * Dependencies: section[id], .nav-link[href^="#"]
- */
 export class ActiveNavManager {
     constructor() {
         this.sections = document.querySelectorAll('section[id]');

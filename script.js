@@ -1,21 +1,7 @@
-/**
- * Portfolio - Nathanuel Filbert Ferdinan
- * OOP: LoaderManager, NavigationManager, ThemeManager, ScrollAnimationManager,
- *      ProjectViewManager, FAQManager, ActiveNavManager, PortfolioApp
- *
- * Required HTML sync:
- *   IDs: loader, themeToggle, hamburger, backToTop, projectsGrid, projectsMarquee
- *   Classes: .navbar, .nav-links, .nav-link[href^="#"], .view-btn[data-view],
- *            .faq-item, .faq-question
- *   Sections with id: home, showcase, projects, about, services, approach, faq, contact
- */
-
 (function (window) {
     'use strict';
 
-    /**
-     * LoaderManager – handles loading screen (optional element)
-     */
+    //
     class LoaderManager {
         constructor(loaderId, delay = 1200) {
             this.el = document.getElementById(loaderId);

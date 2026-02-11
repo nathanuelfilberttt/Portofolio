@@ -1,4 +1,3 @@
-/* Approach – grid kartu pendekatan */
 .approach {
     padding: var(--space-5xl) var(--space-3xl);
     max-width: var(--content-max);
@@ -10,6 +9,18 @@
     border-left: 1px solid var(--border);
     transition: padding-left 0.3s;
 }
-.approach-item:hover { padding-left: 2.5rem; border-left-color: var(--text); }
-.approach-title { font-size: 1.1rem; color: var(--text); margin-bottom: 0.5rem; }
-.approach-description { font-size: 0.9rem; color: var(--text-muted); }
+.approach-item:hover { 
+    padding-left: 2.5rem; 
+    border-left-color: var(--text); 
+}
+
+.approach-title { 
+    font-size: 1.1rem; 
+    color: var(--text); 
+    margin-bottom: 0.5rem; 
+}
+
+.approach-description { 
+    font-size: 0.9rem; 
+    color: var(--text-muted); 
+}

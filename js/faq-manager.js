@@ -1,7 +1,3 @@
-/**
- * FAQManager – accordion (satu item terbuka dalam satu waktu)
- * Dependencies: .faq-item, .faq-question
- */
 export class FAQManager {
     constructor() {
         this.items = document.querySelectorAll('.faq-item');

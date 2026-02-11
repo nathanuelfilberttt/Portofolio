@@ -1,10 +1,14 @@
-/* Projects – grid, cards, view toggle, marquee */
 .projects {
     padding: var(--space-5xl) var(--space-3xl);
     max-width: var(--content-max);
     margin: 0 auto;
 }
-.view-options { display: flex; gap: var(--space-sm); }
+
+.view-options { 
+    display: flex; 
+    gap: var(--space-sm); 
+}
+
 .view-btn {
     padding: 8px 16px;
     font-size: 0.7rem;

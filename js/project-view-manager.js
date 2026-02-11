@@ -1,7 +1,3 @@
-/**
- * ProjectViewManager – toggle tampilan Grid / Marquee
- * Dependencies: .view-btn[data-view], #projectsGrid, #projectsMarquee
- */
 export class ProjectViewManager {
     constructor() {
         this.buttons = document.querySelectorAll('.view-btn[data-view]');

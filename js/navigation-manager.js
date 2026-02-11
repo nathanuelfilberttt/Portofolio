@@ -1,7 +1,3 @@
-/**
- * NavigationManager – scroll state, back-to-top, menu mobile, smooth scroll
- * Dependencies: .navbar, #hamburger, .nav-links, #backToTop
- */
 export class NavigationManager {
     constructor() {
         this.navbar = document.querySelector('.navbar');

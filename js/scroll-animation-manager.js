@@ -1,7 +1,3 @@
-/**
- * ScrollAnimationManager – IntersectionObserver untuk animasi reveal saat scroll
- * Targets: .showcase-gallery-item, .project-card, .service-item, .skill-category, .approach-item
- */
 export class ScrollAnimationManager {
     constructor(selectors, options = {}) {
         this.selectors = selectors || '.showcase-gallery-item, .project-card, .service-item, .skill-category, .approach-item';

@@ -1,8 +1,3 @@
-/**
- * ShowcaseScrollManager – strip gambar bentuk pelangi bergerak ikut arah scroll:
- * - Page turun / diam → strip bergerak ke kiri
- * - Page naik → strip bergerak ke kanan
- */
 export class ShowcaseScrollManager {
     constructor(options = {}) {
         this.stripId = options.stripId || 'showcaseArcStrip';

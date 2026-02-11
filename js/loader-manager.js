@@ -1,7 +1,3 @@
-/**
- * LoaderManager – menangani layar loading (elemen opsional)
- * Dependency: #loader
- */
 export class LoaderManager {
     constructor(loaderId, delay = 1200) {
         this.el = document.getElementById(loaderId);

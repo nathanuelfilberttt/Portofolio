@@ -13,7 +13,6 @@
     gap: var(--space-4xl);
 }
 
-/* Baris 1: Foto + intro */
 .about-hero {
     display: grid;
     grid-template-columns: minmax(200px, 280px) 1fr;
