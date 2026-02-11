@@ -1,0 +1,14 @@
+/* Section shared – .section-header, .section-title (projects, about, services, approach, faq) */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-3xl);
+}
+.section-title {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--text-subtle);
+}

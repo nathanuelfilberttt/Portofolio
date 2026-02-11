@@ -1,0 +1,94 @@
+/* Projects – grid, cards, view toggle, marquee */
+.projects {
+    padding: var(--space-5xl) var(--space-3xl);
+    max-width: var(--content-max);
+    margin: 0 auto;
+}
+.view-options { display: flex; gap: var(--space-sm); }
+.view-btn {
+    padding: 8px 16px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.view-btn:hover,
+.view-btn.active {
+    color: var(--bg);
+    background: var(--text);
+    border-color: var(--text);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-xl);
+}
+.project-card {
+    padding: var(--space-2xl);
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    transition: all 0.4s var(--ease-out);
+    opacity: 0;
+    transform: translateY(20px);
+}
+.project-card:hover {
+    border-color: var(--border-hover);
+    background: rgba(255, 255, 255, 0.04);
+    transform: translateY(-5px) !important;
+}
+.project-number {
+    font-size: 0.7rem;
+    color: var(--text-subtle);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+.project-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 0.5rem;
+}
+.project-description {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
+.project-tech { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 2rem; }
+.tech-tag {
+    padding: 4px 12px;
+    font-size: 0.7rem;
+    color: var(--text);
+    background: var(--accent-muted);
+    border-radius: 20px;
+}
+.project-cta {
+    padding: 10px 24px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border-radius: 50px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.project-cta:hover { background: var(--text); color: var(--bg); border-color: var(--text); }
+
+.projects-marquee { display: none; overflow: hidden; white-space: nowrap; padding: 2rem 0; }
+.projects-marquee.active { display: block; }
+.marquee-content { display: inline-block; animation: marquee 30s linear infinite; }
+.marquee-item { font-size: 4rem; font-weight: 700; color: rgba(255,255,255,0.05); margin-right: 2rem; }
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}

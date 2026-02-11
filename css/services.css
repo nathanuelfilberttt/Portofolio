@@ -1,0 +1,44 @@
+/* Services & skills – grid layanan + tech stacks */
+.services {
+    padding: var(--space-5xl) var(--space-3xl);
+    max-width: var(--content-max);
+    margin: 0 auto;
+}
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+.service-item {
+    padding: 2rem;
+    background: var(--bg-card);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border);
+    transition: 0.3s;
+}
+.service-item:hover { border-color: var(--border-hover); transform: translateY(-3px); }
+.service-title { font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--text); }
+.service-description { font-size: 0.9rem; color: var(--text-muted); }
+
+.skills-section { margin-top: 2rem; }
+.skills-title {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--text-subtle);
+    margin-bottom: 2rem;
+}
+.skills-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+.skill-category {
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    background: var(--bg-card);
+    transition: 0.3s;
+}
+.skill-category:hover { border-color: var(--border-hover); background: rgba(255,255,255,0.03); }
+.skill-category-title { font-size: 0.7rem; text-transform: uppercase; color: var(--text-subtle); margin-bottom: 1rem; font-weight: 600; }
+.skill-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.skill-tag { font-size: 0.75rem; color: var(--text-muted); }

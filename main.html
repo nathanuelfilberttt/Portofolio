@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathanuel Filbert Ferdinan | Portfolio — Design in Details</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        (function() {
+            var t = localStorage.getItem('theme');
+            document.documentElement.setAttribute('data-theme', (t === 'light' ? 'light' : 'dark'));
+        })();
+    </script>
+</head>
+<body>
+    <div class="loader" id="loader" aria-hidden="true">
+        <div class="loader-text">LOADING...</div>
+    </div>
+
+    <nav class="navbar" role="navigation">
+        <div class="navbar-inner">
+            <a href="#home" class="logo" aria-label="Nathanuel Filbert - Home">
+                <span class="logo-text">Nathanuel Filbert</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Works</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#approach" class="nav-link">Approach</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <div class="toggle-switch" id="themeToggle" title="Toggle light/dark theme" aria-label="Toggle theme"></div>
+                <a href="#contact" class="btn-nav-cta">Let's Connect</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="glow-effect"></div>
+
+        <h1 class="hero-headline">
+            <span class="line-block">
+                <span class="font-sans-bold">Crafted</span> 
+                <span class="font-serif-italic">Websites</span>
+            </span>
+            <span class="line-block">
+                <span class="font-serif-reg">Lasting</span> 
+                <span class="font-sans-bold">Impressions</span>
+            </span>
+        </h1>
+
+        <p class="hero-tagline">
+            Premium websites crafted for bold brands. UI/UX · Frontend · Mobile & Web Development.
+        </p>
+
+        <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Get in touch</a>
+            <a href="#projects" class="btn btn-ghost">See my work</a>
+        </div>
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator" aria-hidden="true">
+            <span class="scroll-dot"></span>
+        </div>
+    </section>
+
+    <!-- Tech Stack Strip -->
+    <section class="tech-strip" aria-label="Tech stacks">
+        <div class="tech-strip-inner">
+            <div class="tech-strip-grid">
+                <div class="tech-strip-row">
+                    <span class="tech-strip-item"><img src="assets/javascript.png" alt="JavaScript" width="28" height="28" class="tech-strip-icon">JavaScript</span>
+                    <span class="tech-strip-item"><img src="assets/HTML5.png" alt="HTML5" width="28" height="28" class="tech-strip-icon">HTML5</span>
+                    <span class="tech-strip-item"><img src="assets/css.png" alt="CSS" width="28" height="28" class="tech-strip-icon">CSS</span>
+                </div>
+                <div class="tech-strip-row">
+                    <span class="tech-strip-item"><img src="assets/java.png" alt="Java" width="28" height="28" class="tech-strip-icon">Java</span>
+                    <span class="tech-strip-item"><img src="assets/googlecloud.png" alt="Google Cloud" width="28" height="28" class="tech-strip-icon">Google Cloud</span>
+                    <span class="tech-strip-item"><img src="assets/sql.png" alt="SQL" width="28" height="28" class="tech-strip-icon">SQL</span>
+                    <span class="tech-strip-item"><img src="assets/figma.png" alt="Figma" width="28" height="28" class="tech-strip-icon">Figma</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- SHOWCASE SECTION – two columns: headline + CTAs left, asymmetric 5-image grid right -->
+    <section class="showcase" id="showcase">
+        <div class="showcase-container">
+            <div class="showcase-text">
+                <h2 class="showcase-title">
+                    <span class="showcase-title-main">Design that speaks.</span>
+                    <span class="showcase-title-sub">Delivery that converts.</span>
+                </h2>
+                <p class="showcase-desc">
+                    I craft focused digital experiences that captivate audiences. Combining bold design with smart strategy to elevate your brand.
+                </p>
+                <div class="showcase-actions">
+                    <a href="#about" class="showcase-btn showcase-btn--primary">About me</a>
+                    <a href="#projects" class="showcase-btn showcase-btn--outline">See my work</a>
+                </div>
+            </div>
+
+            <div class="showcase-gallery" id="showcaseGallery" aria-label="Work and organizational moments">
+                <div class="showcase-arc-strip" id="showcaseArcStrip">
+                    <div class="showcase-arc-item">
+                        <img src="assets/kmk.jpg" alt="KMK UNPAR" width="280" height="200">
+                        <div class="showcase-gallery-overlay"><span>KMK UNPAR</span></div>
+                    </div>
+                    <div class="showcase-arc-item">
+                        <img src="assets/seitu.JPG" alt="SEITU" width="280" height="200">
+                        <div class="showcase-gallery-overlay"><span>SEITU</span></div>
+                    </div>
+                    <div class="showcase-arc-item">
+                        <img src="assets/hmpsif.jpg" alt="HMPSIF" width="280" height="200">
+                        <div class="showcase-gallery-overlay"><span>HMPSIF</span></div>
+                    </div>
+                    <div class="showcase-arc-item">
+                        <img src="assets/toto sugiri.JPG" alt="Toto Sugiri Workshop" width="280" height="200">
+                        <div class="showcase-gallery-overlay"><span>Toto Sugiri Workshop</span></div>
+                    </div>
+                    <div class="showcase-arc-item">
+                        <img src="assets/diklat.JPG" alt="Diklat" width="280" height="200">
+                        <div class="showcase-gallery-overlay"><span>Diklat</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="showcase-fade" aria-hidden="true"></div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="section-header">
+            <div class="section-title">About me</div>
+        </div>
+        <div class="about-content">
+            <div class="about-hero">
+                <div class="about-photo-wrap">
+                    <img src="assets/profile.png" alt="Nathanuel Filbert Ferdinan" class="about-photo" width="280" height="280">
+                    <div class="about-photo-accent" aria-hidden="true"></div>
+                </div>
+                <div class="about-intro">
+                    <p class="about-tagline">Computer Science · Mobile &amp; Web</p>
+                    <h2 class="about-name">Nathanuel Filbert Ferdinan</h2>
+                    <p class="about-bio">
+                        I'm a <span class="highlight">Computer Science</span> student at Parahyangan Catholic University with a strong interest in problem-solving and <span class="highlight">Software Development</span>, especially <span class="highlight">Mobile Development</span>.
+                    </p>
+                    <p class="about-bio">
+                        Actively involved in campus organizations—strengthening <span class="highlight">leadership</span>, <span class="highlight">collaboration</span>, and <span class="highlight">time management</span>. I turn challenges into opportunities to learn and grow in tech.
+                    </p>
+                    <p class="about-location">📍 Bandung, Indonesia</p>
+                </div>
+            </div>
+            <div class="about-facts">
+                <div class="about-fact-card">
+                    <span class="about-fact-label">Education</span>
+                    <p class="about-fact-value">Bachelor of Computer Science</p>
+                    <p class="about-fact-meta">Parahyangan Catholic University · 2023 – 2027</p>
+                </div>
+                <div class="about-fact-card">
+                    <span class="about-fact-label">Certification</span>
+                    <p class="about-fact-value">Google Cloud Computing</p>
+                    <p class="about-fact-meta">2025</p>
+                </div>
+                <div class="about-fact-card">
+                    <span class="about-fact-label">Languages</span>
+                    <p class="about-fact-value">Indonesian · English</p>
+                    <p class="about-fact-meta">Native · Professional</p>
+                </div>
+            </div>
+            <div class="about-org-block">
+                <h3 class="about-org-title">Organizational experience</h3>
+                <div class="about-org-grid">
+                    <article class="about-org-card">
+                        <span class="about-org-year">2025</span>
+                        <h4 class="about-org-role">President of HMPSIF</h4>
+                        <p class="about-org-desc">Student association leadership</p>
+                    </article>
+                    <article class="about-org-card">
+                        <span class="about-org-year">2025</span>
+                        <h4 class="about-org-role">Field Coordinator</h4>
+                        <p class="about-org-desc">Toto Sugiri Workshop</p>
+                    </article>
+                    <article class="about-org-card">
+                        <span class="about-org-year">2025–2026</span>
+                        <h4 class="about-org-role">Head of Secretary &amp; Treasurer</h4>
+                        <p class="about-org-desc">KMK UNPAR</p>
+                    </article>
+                    <article class="about-org-card">
+                        <span class="about-org-year">2025</span>
+                        <h4 class="about-org-role">Deputy Chief Executive</h4>
+                        <p class="about-org-desc">SEITU 2025</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="section-header">
+            <div class="section-title">Our works</div>
+            <div class="view-options">
+                <button type="button" class="view-btn active" data-view="grid">Grid</button>
+                <button type="button" class="view-btn" data-view="marquee">Marquee</button>
+            </div>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+            <div class="project-card">
+                <div class="project-number">01</div>
+                <h3 class="project-title">BattleArena</h3>
+                <p class="project-description">Web-Based Programming Course platform built with HTML5, CSS, and JavaScript. Implemented MVC architecture, Aspect-Oriented Programming, and Repository Pattern. Features include DOM manipulation and client-side validation for enhanced user experience.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">MVC</span>
+                    <span class="tech-tag">AOP</span>
+                </div>
+                <a href="https://warofmeme.netlify.app/" class="project-cta" type="button">View project</a></button>
+            </div>
+        </div>
+
+        <div class="projects-marquee" id="projectsMarquee">
+            <div class="marquee-content">
+                <span class="marquee-item">|| BattleArena ||</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="section-header">
+            <div class="section-title">Services &amp; capabilities</div>
+        </div>
+        <div class="services-grid">
+            <div class="service-item">
+                <h3 class="service-title">Crafted websites</h3>
+                <p class="service-description">End‑to‑end portfolio and product sites with a strong focus on hierarchy, storytelling, and interaction.</p>
+            </div>
+            <div class="service-item">
+                <h3 class="service-title">Mobile‑first UI design</h3>
+                <p class="service-description">Design systems and screen flows optimized for phones first, then extended to tablets and desktop.</p>
+            </div>
+            <div class="service-item">
+                <h3 class="service-title">Frontend development</h3>
+                <p class="service-description">Clean, semantic HTML5, modern CSS, and JavaScript with OOP and MVC patterns for maintainable interfaces.</p>
+            </div>
+            <div class="service-item">
+                <h3 class="service-title">Backend &amp; architecture</h3>
+                <p class="service-description">Robust backends with Java/Node.js, Google Cloud, and patterns like Repository and Aspect‑Oriented Programming.</p>
+            </div>
+        </div>
+        
+        <div class="skills-section">
+            <h3 class="skills-title">Tech stacks</h3>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4 class="skill-category-title">Programming languages</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">JavaScript (Node.js)</span>
+                        <span class="skill-tag">C</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4 class="skill-category-title">Web technologies</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4 class="skill-category-title">Tools &amp; platforms</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Google Cloud Platform</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Figma</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4 class="skill-category-title">Concepts</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">OOP</span>
+                        <span class="skill-tag">Algorithms &amp; Data Structure</span>
+                        <span class="skill-tag">DOM Manipulation</span>
+                        <span class="skill-tag">Client‑Side Validation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Approach Section -->
+    <section class="approach" id="approach">
+        <div class="section-header">
+            <div class="section-title">Approach</div>
+        </div>
+        <div class="approach-grid">
+            <article class="approach-item">
+                <h3 class="approach-title">Discovery first</h3>
+                <p class="approach-description">
+                    I start by clarifying your goals, users, and constraints so every design and technical choice is grounded in context.
+                </p>
+            </article>
+            <article class="approach-item">
+                <h3 class="approach-title">Mobile‑first design</h3>
+                <p class="approach-description">
+                    Layouts are crafted from small screens up to ensure clarity, performance, and accessibility across devices.
+                </p>
+            </article>
+            <article class="approach-item">
+                <h3 class="approach-title">Conversion‑driven</h3>
+                <p class="approach-description">
+                    Pages are structured with clear hierarchy, focused messaging, and intentional CTAs to turn visitors into users.
+                </p>
+            </article>
+            <article class="approach-item">
+                <h3 class="approach-title">Future‑ready</h3>
+                <p class="approach-description">
+                    Clean, modular code and scalable architectures (MVC, OOP) keep your product easy to extend as it grows.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="section-header">
+            <div class="section-title">Frequently asked questions</div>
+        </div>
+        <div class="faq-list">
+            <!-- <div class="faq-item">
+                <button class="faq-question" type="button">
+                    <span class="faq-question-text">1. How do we get started?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Reach out via email or LinkedIn with a short overview of your idea. I’ll reply with a simple questionnaire and a clear next step.</p>
+                </div>
+            </div> -->
+            <div class="faq-item">
+                <button class="faq-question" type="button">
+                    <span class="faq-question-text">1. How involved will I be during the project?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>I will handle the UX, UI, implementation, testing, and launch details. You can always provide feedback and suggestions throughout the process.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" type="button">
+                    <span class="faq-question-text">2. How long does a typical project take?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Most small projects take around 2–4 weeks depending on scope, complexity, and feedback speed.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" type="button">
+                    <span class="faq-question-text">3. What is the technical stack for the project?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>The technical stack for the project will be determined based on the project's requirements. However, I am proficient in HTML5, CSS, and JavaScript, with a focus on DOM manipulation and client-side validation. 
+                        For backend logic, I am proficient in Node.js and Java.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" type="button">
+                    <span class="faq-question-text">4. How do I ensure the code quality and structure?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>I implement robust software architectures like MVC (Model-View-Controller) and the Repository Pattern. I also utilize Object-Oriented Programming (OOP) to ensure my code is scalable and maintainable.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" type="button">
+                    <span class="faq-question-text">5. Can I work with design files?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes, I use Figma to review designs and accurately translate them into functional code, ensuring the final software matches the intended user experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="contact-title">Elevate your digital footprint.</h2>
+        <p class="contact-subtitle">Tell me about your product, and I’ll design and build a focused, conversion‑ready experience.</p>
+        <div class="contact-links">
+            <a href="mailto:filbertfilbert10@gmail.com" class="contact-link">Email</a>
+            <a href="https://linkedin.com/in/nathanuel-filbert-ferdinan-bb8029296" class="contact-link" target="_blank">LinkedIn</a>
+            <a href="https://github.com/nathanuelfilbert" class="contact-link" target="_blank">GitHub</a>
+        </div>
+        <div class="contact-location">
+            <p>📍 Bandung, Indonesia</p>
+            <p>🌐 Languages: Indonesian (Native), English (Professional)</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-column footer-column-brand">
+                <p class="footer-logo">N.F.</p>
+                <p class="footer-tagline">Create bold. Deliver better.</p>
+            </div>
+            <div class="footer-column">
+                <p class="footer-heading">Company</p>
+                <a href="#about" class="footer-link">About</a>
+                <a href="#approach" class="footer-link">Approach</a>
+                <a href="#projects" class="footer-link">Work</a>
+            </div>
+            <div class="footer-column">
+                <p class="footer-heading">Services</p>
+                <span class="footer-link">Crafted Websites</span>
+                <span class="footer-link">Mobile‑First UI</span>
+                <span class="footer-link">Frontend Dev</span>
+                <span class="footer-link">Backend &amp; Architecture</span>
+            </div>
+            <div class="footer-column">
+                <p class="footer-heading">Process</p>
+                <a href="#approach" class="footer-link">Discovery</a>
+                <a href="#approach" class="footer-link">Design</a>
+                <a href="#approach" class="footer-link">Development</a>
+                <a href="#faq" class="footer-link">FAQs</a>
+            </div>
+            <div class="footer-column">
+                <p class="footer-heading">Contact</p>
+                <a href="mailto:filbertfilbert10@gmail.com" class="footer-link">filbertfilbert10@gmail.com</a>
+                <span class="footer-link">Bandung, Indonesia</span>
+                <a href="https://linkedin.com/in/nathanuel-filbert-ferdinan-bb8029296" target="_blank" class="footer-link">LinkedIn</a>
+                <a href="https://github.com/nathanuelfilbert" target="_blank" class="footer-link">GitHub</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copy">© 2026 Nathanuel Filbert Ferdinan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        ↑
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

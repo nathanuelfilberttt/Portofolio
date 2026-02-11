@@ -1,0 +1,38 @@
+/* Responsive – breakpoints 1024, 768, 480 */
+@media (max-width: 1024px) {
+    .skills-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+    .hero-headline { font-size: 3rem; }
+    .about-content { grid-template-columns: 1fr; }
+    .services-grid, .approach-grid, .projects-grid, .footer-grid { grid-template-columns: 1fr; }
+    .projects, .about, .services, .approach, .faq, .contact { padding: var(--space-4xl) var(--space-xl); }
+    .tech-strip-inner { padding: 0 var(--space-xl); }
+    .nav-right { display: none; }
+    .menu-trigger { display: flex; }
+    .nav-links {
+        display: none;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        background: var(--bg);
+        z-index: 999;
+        padding: var(--space-2xl);
+    }
+    .navbar.is-open .nav-links { display: flex; }
+    .navbar.is-open .nav-links a { font-size: 1.25rem; }
+    .navbar-inner { padding: var(--space-md) var(--space-xl); }
+    .footer-grid { gap: var(--space-xl); }
+    .site-footer { padding: var(--space-2xl) var(--space-xl) var(--space-lg); }
+}
+
+@media (max-width: 480px) {
+    .skills-grid { grid-template-columns: 1fr; }
+}

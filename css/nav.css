@@ -1,0 +1,159 @@
+/* Navigation – navbar, logo, links, CTA, menu trigger */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: transparent;
+    transition: background 0.4s var(--ease-out), box-shadow 0.4s var(--ease-out);
+}
+.navbar.scrolled {
+    background: rgba(5, 5, 5, 0.92);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 1px 0 var(--border);
+}
+
+.navbar-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--content-wide);
+    margin: 0 auto;
+    padding: 1.25rem var(--space-3xl);
+    transition: padding 0.3s var(--ease-out);
+}
+.navbar.scrolled .navbar-inner {
+    padding: 0.875rem var(--space-3xl);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: -0.02em;
+    color: var(--text);
+    transition: opacity 0.25s var(--ease-out);
+}
+.logo:hover { opacity: 0.85; }
+.logo-img { width: 32px; height: 32px; object-fit: contain; }
+.logo-text { letter-spacing: 0.02em; }
+@media (max-width: 900px) {
+    .logo-text { display: none; }
+    .logo::after { content: 'N.F.'; margin-left: 2px; letter-spacing: 0.08em; }
+}
+
+.nav-links { display: flex; align-items: center; gap: 2.25rem; }
+.nav-link {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    letter-spacing: 0.02em;
+    position: relative;
+    padding: 0.5rem 0;
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s var(--ease-out);
+}
+.nav-link:hover,
+.nav-link.active { color: var(--text); }
+.nav-link:hover::after,
+.nav-link.active::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.nav-right { display: flex; align-items: center; gap: 1.25rem; }
+
+.toggle-switch {
+    width: 44px;
+    height: 24px;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 24px;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.3s var(--ease-out);
+    border: 1px solid var(--border);
+}
+.toggle-switch:hover { background: rgba(255, 255, 255, 0.18); }
+.toggle-switch::after {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: var(--text);
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s var(--ease-out);
+}
+.toggle-switch.active { background: rgba(255, 255, 255, 0.25); }
+.toggle-switch.active::after {
+    transform: translateX(20px);
+    background: var(--bg);
+}
+
+.btn-nav-cta {
+    padding: 0.65rem 1.5rem;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--bg);
+    background: var(--text);
+    border: 1px solid var(--text);
+    border-radius: 50px;
+    transition: color 0.25s var(--ease-out), background 0.25s var(--ease-out), transform 0.2s var(--ease-out);
+}
+.btn-nav-cta:hover {
+    background: transparent;
+    color: var(--text);
+    transform: translateY(-1px);
+}
+
+.menu-trigger {
+    display: none;
+    align-items: center;
+    gap: 10px;
+    padding: 0.5rem 0;
+    border: none;
+    background: transparent;
+    color: var(--text);
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    font-family: inherit;
+    transition: opacity 0.25s var(--ease-out);
+}
+.menu-trigger:hover { opacity: 0.8; }
+.menu-trigger-text { display: inline-block; }
+.menu-trigger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+.menu-trigger-icon span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    border-radius: 1px;
+    transition: transform 0.3s var(--ease-out), opacity 0.3s var(--ease-out);
+}
+.menu-trigger.active .menu-trigger-icon span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.menu-trigger.active .menu-trigger-icon span:nth-child(2) { opacity: 0; }
+.menu-trigger.active .menu-trigger-icon span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }

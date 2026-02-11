@@ -1,0 +1,49 @@
+/* Utils – scroll indicator (hero), back-to-top */
+.scroll-indicator {
+    position: absolute;
+    left: 50%;
+    bottom: 2rem;
+    width: 24px;
+    height: 40px;
+    margin-left: -12px;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    opacity: 0.6;
+}
+.scroll-dot {
+    width: 4px;
+    height: 4px;
+    background: var(--text);
+    border-radius: 50%;
+    margin-top: 8px;
+    animation: scrollWheel 2s infinite;
+}
+@keyframes scrollWheel {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(15px); opacity: 0; }
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: var(--space-xl);
+    right: var(--space-xl);
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-full);
+    color: var(--text-muted);
+    font-size: 1.25rem;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--duration) var(--ease-out);
+    z-index: 1000;
+}
+.back-to-top.visible { opacity: 1; visibility: visible; }
+.back-to-top:hover { border-color: var(--border-hover); color: var(--text); transform: translateY(-3px); }
